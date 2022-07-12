@@ -7,6 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/drink_detail.dart';
 import 'package:http/http.dart' as http;
 
+void main() {
+  runApp(HomePage());
+}
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -53,37 +57,36 @@ class _HomePageState extends State<HomePage> {
                   itemBuilder: (context, index) {
                     var drink = drinks[index];
                     return ListTile(
-                      leading: Hero(
-                        tag: drink["idDrink"],
-                        child: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                            drink["strDrinkThumb"] ??
-                                "http://www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg",
+                        leading: Hero(
+                          tag: drink["idDrink"],
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                              drink["strDrinkThumb"] ??
+                                  "http://www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg",
+                            ),
                           ),
                         ),
-                      ),
-                      title: Text(
-                        "${drink["strDrink"]}",
-                        style: TextStyle(
-                          fontSize: 22,
-                          color: Colors.white,
-                        ),
-                      ),
-                      subtitle: Text(
-                        "${drink["idDrink"]}",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => NewWidget(drink: drink),
+                        title: Text(
+                          "${drink["strDrink"]}",
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white,
                           ),
-                        );
-                      },
-                    );
+                        ),
+                        subtitle: Text(
+                          "${drink["idDrink"]}",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => DrinkDetail(drink: drink),
+                            ),
+                          );
+                        });
                   },
                 )
               : CircularProgressIndicator(backgroundColor: Colors.white),
