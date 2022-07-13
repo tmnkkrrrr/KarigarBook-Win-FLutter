@@ -1,15 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Pages/karigarLedger.dart';
-import 'package:flutter_application_1/homepage.dart';
+import 'package:flutter_application_1/Pages/karigar_ledger.dart';
+import 'Pages/test.dart';
 
 const Color myColor = Colors.brown;
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.brown,
         fontFamily: "Pacifico",
       ),
-      home: KarigarLedger(),
+      home: const KarigarLedger(),
     );
   }
 }
