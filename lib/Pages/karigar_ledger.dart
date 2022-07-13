@@ -24,10 +24,10 @@ class _KarigarLedgerState extends State<KarigarLedger> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         // title: "Cocktail App",
-        theme: ThemeData(
-          primarySwatch: Colors.brown,
-          fontFamily: "Pacifico",
-        ),
+        // theme: ThemeData(
+        //   primarySwatch: Colors.brown,
+        //   fontFamily: "Pacifico",
+        // ),
         home: Scaffold(
 //Col 1
             body: Column(children: <Widget>[

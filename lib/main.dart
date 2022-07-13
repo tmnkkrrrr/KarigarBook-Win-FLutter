@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Pages/karigar_ledger.dart';
-import 'Pages/test.dart';
+import 'package:flutter_application_1/Pages/test.dart';
 
 const Color myColor = Colors.brown;
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.brown,
         fontFamily: "Pacifico",
       ),
-      home: const KarigarLedger(),
+      home: const Test(),
     );
   }
 }

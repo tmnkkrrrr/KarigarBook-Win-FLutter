@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Pages/karigar_ledger.dart';
 
 void main() => runApp(const Test());
 
@@ -97,6 +98,254 @@ class _Test extends State<Test> {
           margin: const EdgeInsets.all(10.0),
           child: Column(
             children: <Widget>[
+              Column(children: <Widget>[
+                //Col 1,Row 1
+                Row(children: <Widget>[
+                  Expanded(
+                      child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.white,
+                      backgroundColor: Colors.teal,
+                      shadowColor: Colors.red,
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('Pressed');
+                    },
+                    child: const Text(
+                      'Miraz KadaiWala',
+                      style: TextStyle(
+                        fontSize: 45,
+                      ),
+                    ),
+                  )),
+//Row1 Col2
+                  Expanded(
+                      child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.white,
+                      backgroundColor: const Color.fromARGB(255, 178, 173, 35),
+                      shadowColor: const Color.fromARGB(255, 54, 244, 127),
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('Pressed');
+                    },
+                    child: const Text(
+                      'Total Pending Pc : 46 ',
+                      style: TextStyle(
+                        fontSize: 45,
+                      ),
+                    ),
+                  )
+                      // ),
+
+                      ),
+
+                  //
+                ]),
+
+//Row1 Col1
+                Row(children: <Widget>[
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.white,
+
+                      // shadowColor: Colors.red,
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('Pressed');
+                    },
+                    child: const Text(
+                      'Date',
+                      style: TextStyle(fontSize: 22),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.white,
+                        // shadowColor: Colors.red,
+                        elevation: 10,
+                      ),
+                      onPressed: () {
+                        print('Pressed');
+                      },
+                      child: const Text(
+                        'Item Name',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.white,
+                        // shadowColor: Colors.red,
+                        elevation: 10,
+                      ),
+                      onPressed: () {
+                        print('Pressed');
+                      },
+                      child: const Text(
+                        'Remarks',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.white,
+                      // shadowColor: Colors.red,
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('Pressed');
+                    },
+                    child: const Text(
+                      'Pc Issued',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.white,
+                      // shadowColor: Colors.red,
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('Pressed');
+                    },
+                    child: const Text(
+                      'Pc Received',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                      backgroundColor: Colors.white,
+                      // shadowColor: Colors.red,
+                      elevation: 10,
+                    ),
+                    onPressed: () {
+                      print('');
+                    },
+                    child: const Text(
+                      'Pc Remaining',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.white,
+                        // shadowColor: Colors.red,
+                        elevation: 10,
+                      ),
+                      onPressed: () {
+                        print('');
+                      },
+                      child: const Text(
+                        'JobWork',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 200,
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        primary: Colors.black,
+                        backgroundColor: Colors.white,
+                        // shadowColor: Colors.red,
+                        elevation: 10,
+                      ),
+                      onPressed: () {
+                        print('');
+                      },
+                      child: const Text(
+                        'Issuer',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                ]),
+
+// Row3 Col1
+                Row(children: <Widget>[
+                  const SizedBox(
+                      width: 90,
+                      height: 25,
+                      child: TextField(
+                          style: TextStyle(
+                              fontSize: 20.0, height: 1, color: Colors.black))),
+
+                  const SizedBox(width: 200, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 200, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 117, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 138, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 155, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 200, height: 25, child: TextField()),
+                  const SizedBox(
+                    width: 2,
+                    height: 25,
+                  ),
+                  const SizedBox(width: 200, height: 25, child: TextField()),
+
+                  const IconButton(
+                    iconSize: 72,
+                    icon: const Icon(Icons.add),
+                    onPressed: null,
+                  )
+
+                  //
+                ])
+              ]),
               data.isEmpty ? dynamicTextField : result,
               data.isEmpty ? submitButton : Container(),
             ],
@@ -121,49 +370,49 @@ class DynamicWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(8.0),
-      child: Row(children: <Widget>[
-        const SizedBox(
+      child: Row(children: const <Widget>[
+        SizedBox(
             width: 90,
             height: 25,
             child: TextField(
                 style:
                     TextStyle(fontSize: 20.0, height: 1, color: Colors.black))),
 
-        const SizedBox(width: 200, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 200, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 200, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 200, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 117, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 117, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 138, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 138, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 155, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 155, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 200, height: 25, child: TextField()),
-        const SizedBox(
+        SizedBox(width: 200, height: 25, child: TextField()),
+        SizedBox(
           width: 2,
           height: 25,
         ),
-        const SizedBox(width: 200, height: 25, child: TextField()),
+        SizedBox(width: 200, height: 25, child: TextField()),
 
-        const IconButton(
+        IconButton(
           iconSize: 72,
-          icon: const Icon(Icons.add),
+          icon: Icon(Icons.add),
           onPressed: null,
         )
 
